@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <meta name="description" content="LoginPage">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.min.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container text-center my-5">
+        <div class="box m-auto p-5 w-65">
+          <h1>Smart Login System</h1>
+          <form id="signInForm" autocomplete="on">
+            <input
+              class="form-control my-3 bg-transparent text-white"
+              type="email"
+              placeholder="Enter your email"
+              id="email" autocomplete="on"
+            />
+            <input
+              class="form-control my-3 bg-transparent text-white"
+              type="password"
+              placeholder="Enter your password"
+              id="password"
+            />
+          </form>
+          <p class="text-danger d-none danger">incorrect email or password</p>
+          <button class="btn btn-outline-info w-100 my-3 login">Login</button>
+          <p class="text-white">
+            Don’t have an account?
+            <a href="#signup" class="text-decoration-none text-white"
+              >Sign Up</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="./JS/index.min.js"></script>
+  </body>
+</html>

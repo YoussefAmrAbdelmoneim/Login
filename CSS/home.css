@@ -1,0 +1,29 @@
+body {
+  background-color: #24353f;
+  font-family: "Titillium Web", sans-serif;
+}
+.navbar {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.box {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  color: #17a2b8;
+}
+
+.container {
+  width: 75% !important;
+}
+.logout {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+button:focus {
+  box-shadow: 0 0 0 0.2rem rgb(255, 193, 7, 0.5);
+}
+.navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none !important;
+}
+.navbar-toggler:focus {
+  border-color: #ffffff !important;
+}

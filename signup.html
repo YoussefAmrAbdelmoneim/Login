@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/signup.min.css">
+</head>
+<body>
+    <section>
+        <div class="container text-center my-5">
+          <div class="box m-auto p-5 w-65">
+            <h1>Smart Login System</h1>
+            <form id="signUpForm" autocomplete="on">
+              <input
+                class="form-control my-3 bg-transparent text-white"
+                type="text"
+                placeholder="Enter your name" id="name" autocomplete="on"
+              />
+              <p class=" alert alert-danger p-2 alertM d-none">Allowed Characters: Only lowercase letters (a-z), numbers (0-9), underscores (_), and hyphens (-).
+                Length: Must be between 3 and 15 characters.</p>
+              <input
+                class="form-control my-3 bg-transparent text-white "
+                type="email"
+                placeholder="Enter your email" id="email" autocomplete="on"
+              />
+              <p class=" alert alert-danger p-2 alertMs d-none">email already exists</p>
+              <p class=" alert alert-danger p-2 alertMsg d-none">Please enter a valid email address, such as example@domain.com.</p>
+              <input
+              class="form-control my-3 bg-transparent text-white"
+              type="password"
+              placeholder="Enter your password" id="password"
+            />
+            <p  class=" alert alert-danger p-2 alertMg d-none">At least one uppercase letter (A-Z).
+              At least one lowercase letter (a-z).
+              At least one digit (0-9).
+              At least one special character (e.g., #, ?, !, @, $, %, ^, &, *, -).
+              A minimum length of 8 characters.</p>
+            </form>
+            <p class="text-success d-none pass">Success</p>
+            <p class="text-danger d-none exist">email already exists</p>
+            <p class="text-danger d-none danger">All inputs are required</p>
+            <button class="btn btn-outline-info w-100 my-3">Sign Up</button>
+            <p class="text-white">You have an account? <a href="#signin" class="text-decoration-none text-white">Signin</a></p>
+          </div>
+        </div>
+      </section>
+      <script src="./JS/signup.min.js"></script>
+</body>
+</html>
